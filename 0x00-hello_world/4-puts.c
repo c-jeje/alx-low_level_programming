@@ -1,13 +1,10 @@
 #include <stdio.h>
-
-/** this display 
-*this                                                                                                                                              
+/** this displays                                                                                                                                   * this                                                                                                                                              
 */
 int main(void)
 {
-  char jeje[] = "\"Programming is like building a multilingual puzzle";
+char jeje[] = "\"Programming is like building a multilingual puzzle";
 
-  puts(jeje);
-
-  return (0);
+puts(jeje);
+return (0);
 }
