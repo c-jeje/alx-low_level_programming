@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * thi is descr
- * this again
+ * Description: main - prints out a string to stdout.
+ * Return: 0 id success.
  */
 int main(void)
 {
