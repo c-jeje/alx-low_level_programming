@@ -6,10 +6,10 @@
 /*betty style doc for function main goes there */
 int main(void)
 {
-	char zita = "_putchar\n";
+	char c = "_putchar\n";
 	
 	for (int i = 0; i != '\0'; i++){
-		putchar(zita[i]);
+		putchar(c[i]);
 	}
 	return (0);
 }
