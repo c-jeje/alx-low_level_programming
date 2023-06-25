@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**function prints word usng putchar()
@@ -8,12 +7,9 @@
 int main(void)
 {
 	char zita = "_putchar\n";
-	int i = 0;
-
-	for (int i = 0; i != '\O'; i++)
-	{
-	putchar(zita[i]);
+	
+	for (int i = 0; i != '\0'; i++){
+		putchar(zita[i]);
 	}
 	return (0);
 }
-
