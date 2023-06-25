@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**function prints word usng putchar()
  * no standard libraries
  */
