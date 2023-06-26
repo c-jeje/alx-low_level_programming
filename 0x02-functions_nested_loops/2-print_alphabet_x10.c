@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet - Entry point
- * Return:0
+ * print_alphabet_x10 - ten times
+ * followed by a new lin
  */
 void print_alphabet_x10(void)
 {
