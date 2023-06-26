@@ -1,20 +1,17 @@
+#include <stdio.h>
 #include "main.h"
 
-/**
- * main -  prints _putchar, followed by a new line
- * Return: Always 0 (Success)
+/**function prints word usng putchar()
+ * no standard libraries
  */
+/*betty style doc for function main goes there */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	char c = "_putchar\n";
 
-	return (0);
+	for (i=0; i != '\0'; i++)
+	{
+		putchar([i]);
+	}
+	return(0);
 }
