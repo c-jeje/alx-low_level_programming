@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-*prints alphabet in lower
-*iin lower case
-*/
+ * print_alphabet - Entry point
+ * Return:0
+ */
+
 void print_alphabet(void)
 {
 	char c = 'a';
