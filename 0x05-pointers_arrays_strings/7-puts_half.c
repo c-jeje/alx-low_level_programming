@@ -14,13 +14,15 @@ void puts_half(char *str)
 	{
 		len1 += 1;
 	}
+	len1 -=1;
+
 	if (len1 % 2 != 0)
 	{
 		half_len = (len1 - 1) / 2;
 	}
 	else
 	{
-		half_len = (len1/2);
+		half_len = (len1 / 2);
 	}
 	for (i = half_len; i <= len1 - 1; i += 1)
 	{
