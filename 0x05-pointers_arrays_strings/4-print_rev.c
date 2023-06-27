@@ -16,9 +16,9 @@ void print_rev(char *s)
 	{
 		i++; /*determining the length of the string*/
 	}
-	j = i - 1;
+	j = i;
 
-	while (s[j] > -1)
+	while (s[j - 1] > -1)
 	{
 		putchar(s[j]);
 		j--;
