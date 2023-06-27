@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * 1-swap.c - swaps a and b values
+ * swap_int - swaps a and b values
  * @a: point t value 1
  * @b: points to value 2
  */
