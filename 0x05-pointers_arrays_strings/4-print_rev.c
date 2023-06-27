@@ -8,14 +8,20 @@
  */
 void print_rev(char *s)
 {
-	int i;
+	int i, j;
 
-	i = s['\0'] - 1;
+	i = 0;
 
 	while (s[i] != 0)
 	{
-		putchar(s[i]);
-		i--;
+		i++; /*determining the length of the string*/
+	}
+	j = i;
+	
+	while (s[j] > -1)
+	{
+		putchar(s[j]);
+		j--;
 	}
 	putchar(10);
 }
