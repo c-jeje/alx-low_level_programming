@@ -6,7 +6,7 @@
  */
 void rev_string(char *s)
 {
-	int i, a, z;
+	int i, a, z, j;
 	char  str2;
 
 	i = 0;
@@ -16,11 +16,11 @@ void rev_string(char *s)
 		i++;
 	}
 
-	z = i;
+	z = i, j = 0
 
 	for (a = z - 1; a >= 0; a--)
 	{
-		str2 = ++s[a];
+		str2[j] = s[a];
 
 	}
 
