@@ -6,24 +6,24 @@
  */
 void rev_string(char *s)
 {
-	int i, a, z, j;
-	str2[];
+    int i, j;
+    char temp;
 
-	i = 0, j = 0;
+    // Find the length of the string
+    i = 0;
+    while (s[i] != '\0')
+    {
+        i++;
+    }
 
-	while (s[i] != '\0')
-	{
-		i++;
-	}
+    j = i - 1;  // Index of the last character in the original string
 
-	z = i;
-
-	for (a = z - 1; a >= 0; a--)
-	{
-		str2[j] = s[a];
-		j++;
-
-	}
-
-	*s = str2;
+    // Reverse the string by swapping characters from the start and end
+    for (int k = 0; k < i / 2; k++)
+    {
+        temp = s[k];
+        s[k] = s[j];
+        s[j] = temp;
+        j--;
+    }
 }
