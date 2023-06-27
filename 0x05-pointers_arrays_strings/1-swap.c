@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * 1-swap.c - swaps a and b values
  * @a: point t value 1
@@ -7,6 +8,7 @@
 void swap_int(int *a, int *b)
 {
 	int c;
+
 	c = *a;
 	*a = *b;
 	*b = c;
