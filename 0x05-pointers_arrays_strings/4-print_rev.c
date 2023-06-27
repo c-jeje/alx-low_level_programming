@@ -12,13 +12,13 @@ void print_rev(char *s)
 
 	i = 0;
 
-	while (s[i] != 0)
+	while (s[i] != '\0')
 	{
 		i++; /*determining the length of the string*/
 	}
 	j = i - 1;
 
-	while (s[j] >= 0)
+	while (s[j] > -1)
 	{
 		putchar(s[j]);
 		j--;
