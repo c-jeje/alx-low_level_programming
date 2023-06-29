@@ -7,7 +7,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int c_dest, int c_src;
+	int c_dest;
+	int c_src;
 	
 	c_dest = 0;
 	c_src = 0;
@@ -19,7 +20,7 @@ char *_strcat(char *dest, char *src)
 	{
 		dest[c_dest] = src[c_src];
 		c_dest++;
-		c_src +=1;
+		c_src++;
 	}
 	dest[c_dest] = '\0';
 	
