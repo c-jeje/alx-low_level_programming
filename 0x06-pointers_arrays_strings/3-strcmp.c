@@ -1,33 +1,22 @@
 #include "main.h"
 
 /** 
- *_strncpy - copies a string
- * @dest: variable pointed
- * @src: variable string pointed
- * @n: variable counter
- *
- * Return: returns char
+ *_strncmp - compares two strings.
+ * @s1: variable string pointed
+ * @s2: variable string pointed
+ * 
+ * Return: returns int
  */
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-	int c_dest;
-	int c_src;
+	int result;
 	
-	c_dest = 0;
-	c_src = 0;
+	if (s1 == s2)
+		result = 0;
+	else if (s1 > s2)
+		result = 1;
+	else 
+		result = -1;
 
-	while (c_src < n && src[c_src] != '\0')
-	{
-		dest[c_dest] = src[c_src];
-
-		c_dest++;
-		c_src++;
-	}
-
-	while (c_dest < n)
-	{
-		dest[c_dest] = '\0';
-		c_dest++;
-	}
-	return (dest);
+	return (result);
 }
