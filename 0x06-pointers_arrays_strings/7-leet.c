@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * leet - encodes a string into 137
- * @str: the string variable
+ * leet - encodes a string into 1337
+ * @str: the string variable to be encoded
  *
- * Return: returns a char str
+ * Return: resulting string
  */
 char *leet(char *str)
 {
