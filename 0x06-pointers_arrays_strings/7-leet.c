@@ -10,10 +10,10 @@ char *leet(char *str)
 {
 	int i, j;
 	
-	char letters[10] = {'a', 'e', 'o', 't' , 'l', 'A', 'E', 'O', 'T' , 'L'};
+	char *letters = "aeotlAEOTL";
 	
-	int values[10] = {4, 3, 0, 7, 1, 4, 3, 0, 7, 1};	
-
+	char *values = "4307143071"; 
+	
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; j < 10; j++)
