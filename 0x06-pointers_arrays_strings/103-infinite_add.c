@@ -13,13 +13,37 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-    int sum = atoi(n1) + atoi(n2);  /* Convert strings to integers and add them */
+    int sum = 0;
 
-    int required_size = snprintf(NULL, 0, "%d", sum) + 1;  /* Calculate required size for the result */
+    /* Perform addition of digits from right to left */
+    int carry = 0;
+    int i = 0;
+    while (n1[i] != '\0' || n2[i] != '\0' || carry != 0)
+    {
+        /* Convert characters to integers and add them */
+        int digit1 = n1[i] - '0';
+        int digit2 = n2[i] - '0';
+        int digitSum = digit1 + digit2 + carry;
 
-    if (required_size > size_r)
-        return r;  /* Return the original buffer if it's too small */
+        /* Calculate carry if digit sum is greater than 9 */
+        carry = digitSum / 10;
 
-    snprintf(r, size_r, "%d", sum);  /* Store the sum as a string in the buffer 'r' */
+        /* Calculate remainder to be stored in the result */
+        int remainder = digitSum % 10;
+
+        /* Store the remainder as character in the result */
+        r[i] = remainder + '0';
+
+        /* Increment index */
+        i++;
+
+        /* Check if result exceeds buffer size */
+        if (i >= size_r)
+            return r;
+    }
+
+    /* Null-terminate the result string */
+    r[i] = '\0';
+
     return r;
 }
