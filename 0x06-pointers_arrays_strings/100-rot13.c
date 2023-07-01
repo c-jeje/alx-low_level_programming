@@ -12,9 +12,9 @@ char *rot13(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		while (((str[i] >= 'a') && (str[i] <= 'z')) || ((str[i] >= 'A') && (str[i] <= 'Z')))
+		while (((str[i] >= 'a') && (str[i] <= 'z'))) /*|| ((str[i] >= 'A') && (str[i] <= 'Z')))*/
 			{
-				if((str[i] <= 'm') || (str[i] <= 'M'))
+				if(str[i] <= 'm') /*|| (str[i] <= 'M'))*/
 					str[i] = str[i] + 13;
 				else
 					str[i] = str[i] - 13;
