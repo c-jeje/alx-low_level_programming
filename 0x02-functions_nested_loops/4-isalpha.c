@@ -6,7 +6,7 @@
  * Return: returns an integer value
  *
  */
-int _islower(int c)
+int _isalpha(int c)
 {
 	return (((c >= 97) && (c <= 122)) || ((c >= 'A') && (c <= 'Z')));
 }
