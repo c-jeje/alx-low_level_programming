@@ -13,26 +13,36 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-    int carry = 0;
-    int i = 0;
+    int carry = 0; /* Carry to handle digit-wise addition */
+    int i = 0; /* Index to track the position in the result buffer */
 	int re = 0;
-    while (n1[i] != '\0' || n2[i] != '\0' || carry != 0)
+
+    /* Iterate until either of the input strings or the carry becomes zero */
+    while (*n1 != '\0' || *n2 != '\0' || carry != 0)
     {
-        int digit1 = n1[i] - '0';
-        int digit2 = n2[i] - '0';
-        int digitSum = digit1 + digit2 + carry;
+        /* Extract the digits from the input strings */
+        int digit1 = (*n1 != '\0') ? *n1 - '0' : 0; /* Convert character to digit */
+        int digit2 = (*n2 != '\0') ? *n2 - '0' : 0; /* Convert character to digit */
+        int digitSum = digit1 + digit2 + carry; /* Sum of the digits and carry */
 
-        carry = digitSum / 10;
-        re = digitSum % 10;
+        carry = digitSum / 10; /* Calculate the carry */
+        re = digitSum % 10; /* Calculate the remainder */
 
-        r[i] = re + '0';
-        i++;
+        /* Check if the result exceeds the buffer size */
+        if (i >= size_r - 1)
+            return 0; /* Return 0 if buffer size is insufficient */
 
-        if (i >= size_r)
-            break;
+        r[i] = re + '0'; /* Store the remainder as a character in the result buffer */
+        i++; /* Increment the index to move to the next position in the buffer */
+
+        /* Move to the next digit in the input strings */
+        if (*n1 != '\0')
+            n1++;
+        if (*n2 != '\0')
+            n2++;
     }
 
-    r[i] = '\0';
+    r[i] = '\0'; /* Null-terminate the result string */
 
-    return r;
+    return r; /* Return a pointer to the result buffer */
 }
