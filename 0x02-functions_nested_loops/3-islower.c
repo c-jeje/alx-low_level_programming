@@ -5,9 +5,8 @@
  * @c: integer number
  * Return: returns an integer value
  *
- */ 
+ */
 int _islower(int c)
 {
 	return ((c >= 97) && (c <= 122));
-
 }
