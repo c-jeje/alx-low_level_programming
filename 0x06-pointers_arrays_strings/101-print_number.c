@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * print_number - prints an integer
- * @n: the integer to be printed
- *
- * Return: returns the type integer
+ * print_number - prints an integer;
+ * @n: integer to be printed;
  */
 void print_number(int n)
 {
-	int i;
-	unsigned int j;
+	unsigned int n1;
 
-	for (i = 0; n != '\0'; i++)
+	if (n < 0)
 	{
-		if (n >= 0)
-			j = n;
-		else
-			j = n * -1;
-		
-		_putchar(j);
+		n1 = -n;
+		_putchar('-');
+	} else
+	{
+		n1 = n;
 	}
+
+	if (n1 / 10)
+		print_number(n1 / 10);
+
+	_putchar((n1 % 10) + '0');
 }
