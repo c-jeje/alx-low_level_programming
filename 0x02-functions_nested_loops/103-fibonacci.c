@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the sum of the even-valued terms, followed by a new line.
+ * main - finds and prints sum even-valued terms
+ * followed by a new line.
  *
  * Return: returns zero a success
  */
@@ -19,10 +20,14 @@ int main(void)
 		next_num = num1 + num2;
 		num1 = num2;
 		num2 = next_num;
-	
+
 		if ((next_num <= 4000000) && (next_num % 2 == 0))
 		{
 			sumup = sumup + next_num;
+		}
+		else
+		{
+			sumup = sumup;
 		}
 	}
 	sumup = sumup + 2;
