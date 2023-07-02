@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
+ * main - finds and prints the sum of the even-valued terms, followed by a new line.
  *
  * Return: returns zero a success
  */
@@ -14,21 +14,18 @@ int main(void)
 	num1 = 1;
 	num2 = 2;
 
-	printf("%lu, ", num1);
-	printf("%lu, ", num2);
-
 	for (i = 3; i < 51; i++)
 	{
 		next_num = num1 + num2;
 		num1 = num2;
 		num2 = next_num;
-		
+	
 		if ((next_num <= 4000000) && (next_num % 2 == 0))
 		{
-			sumup = sumup + next_num;	
+			sumup = sumup + next_num;
 		}
 	}
-	sumup = sumup + num2;
+	sumup = sumup + 2;
 
 	printf("%lu\n", sumup);
 
