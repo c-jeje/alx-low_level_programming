@@ -9,8 +9,8 @@
 int main(void)
 {
 	int i;
-	long num1, num2;
-	long next_num, sumup;
+	long int num1, num2;
+	long int next_num, sumup;
 
 	num1 = 1;
 	num2 = 2;
