@@ -9,11 +9,12 @@
 int main(void)
 {
 	int i;
-	long int num1, num2;
-	long int next_num, sumup;
+	unsigned long int num1, num2;
+	unsigned long int next_num, sumup;
 
 	num1 = 1;
 	num2 = 2;
+	sumup = 2
 
 	for (i = 3; i < 51; i++)
 	{
@@ -30,8 +31,7 @@ int main(void)
 			sumup = sumup;
 		}
 	}
-	sumup = sumup + 2;
-
+	
 	printf("%lu\n", sumup);
 
 	return (0);
