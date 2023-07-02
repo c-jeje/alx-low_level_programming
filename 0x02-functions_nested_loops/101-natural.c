@@ -28,4 +28,5 @@ int main(void)
 
 	_putchar(sumup + '0');
 	_putchar('\n' + '0');
+	return (sumup);
 }
