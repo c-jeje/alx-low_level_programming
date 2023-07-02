@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i, num1, num2;
-	long int next_num;
+	unsigned long int next_num;
 
 	num1 = 1;
 	num2 = 2;
