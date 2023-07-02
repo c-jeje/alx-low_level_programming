@@ -21,7 +21,7 @@ int main(void)
 		num1 = num2;
 		num2 = next_num;
 
-		if ((next_num <= 4000000) && (next_num % 2 == 0))
+		if ((next_num < 4000000) && (next_num % 2 == 0))
 		{
 			sumup = sumup + next_num;
 		}
