@@ -31,5 +31,5 @@ int main(void)
 
 	printf("%lu", sumup);
 	printf("\n");
-	return (sumup);
+	return (void);
 }
