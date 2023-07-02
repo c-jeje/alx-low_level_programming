@@ -14,7 +14,7 @@ int main(void)
 
 	num1 = 1;
 	num2 = 2;
-	sumup = 2
+	sumup = 2;
 
 	for (i = 3; i < 51; i++)
 	{
