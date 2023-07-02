@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-/** main - prints the first 50 Fibonacci numbers, starting with 1 and 2
+/**
+ * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
  *
  * Return - 0
  */
-int main (void)
+int main(void)
 {
 	int i, num1, num2;
-	unsigned long int next_num;
+	unsigned long long int next_num;
 
 	num1 = 1;
 	num2 = 2;
@@ -20,14 +21,14 @@ int main (void)
 		if (i == 50)
 		{
 			next_num = num1 + num2;
-			printf("%ld\n", next_num);
+			printf("%llu\n", next_num);
 		}
 		else if (i != 50)
 		{
 			next_num = num1 + num2;
 			num1 = num2;
 			num2 = next_num;
-			printf("%ld, ", next_num);
+			printf("%llu, ", next_num);
 		}
 	}
 	return (0);
