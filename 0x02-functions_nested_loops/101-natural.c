@@ -6,11 +6,11 @@
  *
  * Return: returns void
  */
-void main(void)
+nt main(void)
 {
 	unsigned long int sum3, sum5, sumup;
 
-	int i, j, k;
+	int i;
 	
 	sum3 = 0;
 	sum5 = 0;
