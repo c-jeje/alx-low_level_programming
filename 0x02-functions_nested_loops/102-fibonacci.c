@@ -7,14 +7,15 @@
  */
 int main(void)
 {
-	int i, num1, num2;
-	unsigned long int next_num;
+	int i;
+	long int  num1, num2;
+	long next_num;
 
 	num1 = 1;
 	num2 = 2;
 
-	printf("%d, ", num1);
-	printf("%d, ", num2);
+	printf("%lu, ", num1);
+	printf("%lu, ", num2);
 
 	for (i = 3; i < 51; i++)
 	{
