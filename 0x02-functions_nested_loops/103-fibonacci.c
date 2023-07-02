@@ -31,7 +31,6 @@ int main(void)
 			sumup = sumup;
 		}
 	}
-	
 	printf("%lu\n", sumup);
 
 	return (0);
