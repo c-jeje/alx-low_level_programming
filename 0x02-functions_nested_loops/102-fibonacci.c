@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i, num1, num2;
-	unsigned long long int next_num;
+	unsigned long int next_num;
 
 	num1 = 1;
 	num2 = 2;
@@ -21,14 +21,14 @@ int main(void)
 		if (i == 50)
 		{
 			next_num = num1 + num2;
-			printf("%lld\n", next_num);
+			printf("%ld\n", next_num);
 		}
 		else if (i != 50)
 		{
 			next_num = num1 + num2;
 			num1 = num2;
 			num2 = next_num;
-			printf("%llu, ", next_num);
+			printf("%ld, ", next_num);
 		}
 	}
 	return (0);
