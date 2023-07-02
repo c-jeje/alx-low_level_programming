@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - acomputes and prints sum of multipltes of 3|| 5 < 1024
@@ -26,7 +26,7 @@ int main(void)
 	}
 	sumup = sum3 + sum5;
 
-	_putchar(sumup + '0');
+	printf("%lu", sumup);
 	_putchar('\n');
 	return (sumup);
 }
