@@ -14,41 +14,16 @@ int main(void)
 
 	num1 = 1;
 	num2 = 2;
-	i = 0;
+	i = 1;
 
 	while (i <= 98)
 	{
-		if (num1 < 10)
-		{
-			if ((num1 == 2) || (num1 == 1))
-			{
-				printf("%lu, ", num1);
-				i++;
-			}
-		}
-		else if ((num1 >= 10) && (num1 < 100))
-		{
-			if (((num1 / 10) == 1) || ((num1 / 10) == 2))
-			{
-				printf("%lu, ", num1);
-				i++;
-			}
-		}
-		else if ((num1 >= 100) && (num1 < 1000))
-		{
-			if (((num1 / 100) == 1) || ((num1 / 100) == 2))
-			{
-				printf("%lu, ", num1);
-				i++;
-			}
-		}
-
+		printf("%lu, ", num1);
 		next_num = num1 + num2;
 		num1 = num2;
 		num2 = next_num;
+		i++;
 	}
-	
 	printf("\n");
-
 	return (0);
 }
