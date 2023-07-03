@@ -1,26 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the first 98 Fibonacci numbers, starting with 1 and 2
+ * main - finds and prints the first 98 Fibonacci numbers
+ *starting with 1 and 2
  *
  * Return: returns zero a success
  */
 int main(void)
 {
 	int i;
-	long int num1, num2;
-	long int next_num;
+	unsigned long int num1, num2;
+	unsigned long int next_num;
 
 	num1 = 1;
 	num2 = 2;
 	i = 0;
 
-	while (i != 98)
+	while (i <= 98)
 	{
 		if (num1 < 10)
 		{
 			if ((num1 == 2) || (num1 == 1))
-			{	
+			{
 				printf("%lu, ", num1);
 				i++;
 			}
@@ -46,5 +47,8 @@ int main(void)
 		num1 = num2;
 		num2 = next_num;
 	}
+	
+	printf("\n");
+
 	return (0);
 }
