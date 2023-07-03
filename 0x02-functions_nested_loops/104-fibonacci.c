@@ -16,7 +16,7 @@ int main(void)
 	num2 = 2;
 	i = 1;
 
-	while (i <= 98)
+	while (i <= 95)
 	{
 		printf("%lu, ", num1);
 		next_num = num1 + num2;
