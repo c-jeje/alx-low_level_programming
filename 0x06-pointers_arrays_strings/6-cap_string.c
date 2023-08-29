@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * 6-cap_string.c - capitalizes all words of a string.
+ * cap_string - capitalizes string words.
  * @str: string to be capitalised
- * 
- * Return: returns a char str
+ *
+ * Return: char str
  */
 char *cap_string(char *str)
 {
@@ -21,12 +21,12 @@ char *cap_string(char *str)
 		for (s = 0; s < 13; s++)
 		{
 			if (str[i] == k[s])
+			{
+				if ((str[i + 1] >= 'a') && (str[i + 1] <= 'z'))
 				{
-					if ((str[i+1] >= 'a') && (str[i+1] <= 'z'))
-						{
-							str[i+1] = str[i+1] - 32;
-						}
+					str[i + 1] = str[i + 1] - 32;
 				}
+			}
 		}
 	}
 	return (str);

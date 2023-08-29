@@ -9,11 +9,11 @@
 char *leet(char *str)
 {
 	int i, j;
-	
+
 	char *letters = "aeotlAEOTL";
-	
-	char *values = "4307143071"; 
-	
+
+	char *values = "4307143071";
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; j < 10; j++)
