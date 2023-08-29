@@ -1,3 +1,28 @@
+0x13. C - More singly linked lists
+C
+Algorithm
+Data structure
+ By: Julien Barbier
+ Weight: 1
+ Project will start Aug 28, 2023 5:00 AM, must end by Aug 30, 2023 5:00 AM
+ Checker was released at Aug 28, 2023 5:00 PM
+ An auto review will be launched at the deadline
+Resources
+Read or watch:
+
+Google
+Youtube
+Learning Objectives
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+
+General
+How to use linked lists
+Start to look for the right source of information without too much help
+Copyright - Plagiarism
+You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+You are not allowed to publish any content of this project.
+Any form of plagiarism is strictly forbidden and will result in removal from the program.
 Requirements
 General
 Allowed editors: vi, vim, emacs
@@ -30,56 +55,3 @@ typedef struct listint_s
     int n;
     struct listint_s *next;
 } listint_t;
-Tasks
-0. Print list
-mandatory
-Write a function that prints all the elements of a listint_t list.
-
-Prototype: size_t print_listint(const listint_t *h);
-Return: the number of nodes
-Format: see example
-You are allowed to use printf
-julien@ubuntu:~/0x13. More singly linked lists$ cat 0-main.c 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include "lists.h"
-
-/**
- * main - check the code
- * 
- * Return: Always 0.
- */
-int main(void)
-{
-    listint_t *head;
-    listint_t *new;
-    listint_t hello = {8, NULL};
-    size_t n;
-
-    head = &hello;
-    new = malloc(sizeof(listint_t));
-    if (new == NULL)
-    {
-        printf("Error\n");
-        return (1);
-    }
-    new->n = 9;
-    new->next = head;
-    head = new;
-    n = print_listint(head);
-    printf("-> %lu elements\n", n);
-    free(new);
-    return (0);
-}
-julien@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_listint.c -o a
-julien@ubuntu:~/0x13. More singly linked lists$ ./a 
-9
-8
--> 2 elements
-julien@ubuntu:~/0x13. More singly linked lists$ 
-Repo:
-
-GitHub repository: alx-low_level_programming
-Directory: 0x13-more_singly_linked_lists
-File: 0-print_listint.c
